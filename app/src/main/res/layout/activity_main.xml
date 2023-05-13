@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/mainpage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/momcake_bold"
+            android:padding="20dp"
+            android:text="@string/title"
+            android:textColor="@color/colorMainText"
+            android:textSize="50sp"
+            android:transitionName="logo_name" />
+
+        <ImageView
+            android:id="@+id/pin"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/pin"
+            android:transitionName="pin" />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/pin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-20dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/car"
+            android:transitionName="car" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/guy"
+            android:transitionName="guy" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainpage"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                app:cardCornerRadius="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/momcake_bold"
+                        android:text="@string/hh"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorMainText"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/button_bg"
+                        android:text="@string/yes"
+                        android:textAllCaps="false"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/adcard"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorAccent"
+                android:visibility="gone"
+                app:cardCornerRadius="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <com.google.android.gms.ads.AdView
+                        xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/adView"
+                        android:layout_width="320dp"
+                        android:layout_height="100dp"
+                        ads:adSize="LARGE_BANNER"
+                        android:layout_gravity="center_horizontal"
+                        ads:adUnitId="ca-app-pub-9261038294033166/7332746290">
+
+                    </com.google.android.gms.ads.AdView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorAccent"
+                app:cardCornerRadius="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/momcake_bold"
+                        android:text="@string/your_vehicle_park_location_is_not_saved_yet"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorMainText"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/delete"
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_bg"
+                            android:text="Delete"
+                            android:textAllCaps="false"
+                            android:textColor="#fff" />
+
+                        <Button
+                            android:id="@+id/share"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="206dp"
+                            android:background="@drawable/button_bg"
+                            android:text="Share"
+                            android:textAllCaps="false"
+                            android:textColor="#fff" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/momcake_thin"
+                        android:text="@string/note"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorAccent"
+                app:cardCornerRadius="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/momcake_bold"
+                        android:text="@string/navigate_to_your_parked_vehicle"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorMainText"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/button_bg"
+                        android:text="@string/find_my_vehicle"
+                        android:textAllCaps="false"
+                        android:textColor="#fff" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Park Your Vehicle</string>
+    <string name="hh">Do you want to park your Vehicle here?</string>
+    <string name="yes">Park Here</string>
+    <string name="find_my_vehicle">Find My Vehicle</string>
+    <string name="navigate_to_your_parked_vehicle">Navigate to your parked vehicle</string>
+    <string name="your_vehicle_park_location_is_not_saved_yet">Your Vehicle Park Location is not saved</string>
+    <string name="success">Success</string>
+    <string name="dialog1">Your vehicle location has been saved.</string>
+    <string name="dialog2">To navigate to your Vehicle</string>
+    <string name="dialog3">1. Click on Find My Vehicle</string>
+    <string name="dialog4">2. Click on Directions</string>
+    <string name="close">Close</string>
+    <string name="note">You can also share your vehicle location\n if someone else is picking it</string>
+    <string name="title">Park\nYour\nVehicle</string>
+    <string name="made_with">Made with</string>
+    <string name="in">in</string>
+</resources>

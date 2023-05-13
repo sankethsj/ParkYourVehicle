@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/dialogbg"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/success"
+        android:textColor="@color/colorMainText"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:fontFamily="@font/momcake_bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:id="@+id/dialog1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog1"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/coloText"
+        android:textAlignment="center"
+        android:fontFamily="@font/momcake_thin"
+        android:textSize="24sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorMainText"/>
+    <TextView
+        android:id="@+id/dialog2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/dialog2"
+        android:textSize="24sp"
+        android:fontFamily="@font/momcake_thin"
+        android:textColor="@color/coloText"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    <TextView
+        android:id="@+id/dialog3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog3"
+        android:textSize="24sp"
+        android:fontFamily="@font/momcake_thin"
+        android:textColor="@color/coloText"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/findbutton"/>
+    <TextView
+        android:id="@+id/dialog4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog4"
+        android:textSize="24sp"
+        android:fontFamily="@font/momcake_thin"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/coloText"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/directions"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorMainText"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView2"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:visibility="visible"
+        android:layout_gravity="center_horizontal"
+        ads:adUnitId="ca-app-pub-9261038294033166/7082121395">
+
+    </com.google.android.gms.ads.AdView>
+
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/close"
+        android:textColor="#fff" />
+</LinearLayout>
